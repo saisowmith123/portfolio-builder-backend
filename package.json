@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "setup": "bash setup-secret.sh",
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
     "seed": "node prisma/seed.js"
@@ -14,6 +15,7 @@
   "type": "commonjs",
   "dependencies": {
     "@prisma/client": "^6.4.1",
+    "apollo-server-express": "^3.13.0",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
